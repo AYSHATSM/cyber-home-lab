@@ -34,3 +34,25 @@ or performance under different network conditions.
 ## Next Steps
 Repeat the measurement and compare results, then review
 additional application behavior within the local lab.
+
+## Repeated Request Measurements
+
+Ten sequential requests were made to the local application.
+
+- Successful HTTP responses: 10 out of 10
+- Consistent response size: 9393 bytes per response
+- Mean response time: approximately 0.007484 seconds (7.48 ms)
+- Fastest response: 0.004583 seconds (4.58 ms)
+- Slowest response: 0.012159 seconds (12.16 ms)
+
+## Interpretation
+
+All ten requests returned HTTP 200 with the same response size.
+The measured response times varied between requests.
+
+These measurements describe a small local test only. They do not
+establish production performance, capacity, or behavior under load.
+
+## Evidence
+
+- evidence/http-response-samples.csv
